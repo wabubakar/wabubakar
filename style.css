@@ -483,3 +483,59 @@ body::before {
   background: rgba(73, 215, 233, .13);
   border-color: #4c8dff;
 }
+
+/* =====================================
+   MOBILE: VERTICAL SCROLL ONLY
+   Prevent horizontal scrolling
+===================================== */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+    overflow-y: auto;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+video,
+iframe,
+canvas,
+svg {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: clip !important;
+        overflow-y: auto;
+    }
+
+    body {
+        position: relative;
+    }
+
+    img,
+    video,
+    iframe {
+        height: auto;
+    }
+
+    .container,
+    .section,
+    .hero,
+    .hero-content,
+    .hero-card {
+        max-width: 100%;
+    }
+}
