@@ -625,3 +625,32 @@ body::before {
     font-size: 8px;
   }
 }
+
+/* FIX MOBILE SCREEN WIDTH */
+@media (max-width: 650px) {
+  html,
+  body {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .site-header,
+  main,
+  footer {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .container {
+    width: calc(100% - 36px);
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav {
+    width: calc(100% - 36px);
+  }
+}
