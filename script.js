@@ -128,17 +128,6 @@ projectCards.forEach((card) => {
     card.style.transform = "";
   });
 });
-window.addEventListener("load", () => {
-  const preloader = document.getElementById("preloader");
-
-  setTimeout(() => {
-    preloader.classList.add("hide");
-
-    setTimeout(() => {
-      preloader.remove();
-    }, 700);
-  }, 1600);
-});
 const customCursor = document.getElementById("customCursor");
 
 if (customCursor && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
