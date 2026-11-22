@@ -1,3 +1,4 @@
+![Abubakar Banner](banner.png)
 # Hi, I'm Abubakar 👋
 
 ### Aspiring Developer | Technology Enthusiast
