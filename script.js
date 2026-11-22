@@ -163,3 +163,19 @@ document.querySelectorAll(".btn").forEach((button) => {
     button.style.transform = "";
   });
 });
+// Responsive Preloader
+
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+
+  if (!preloader) return;
+
+  setTimeout(() => {
+    preloader.classList.add("hide");
+
+    setTimeout(() => {
+      preloader.remove();
+    }, 600);
+
+  }, 1200);
+});
