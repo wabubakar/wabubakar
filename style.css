@@ -635,28 +635,3 @@ svg {
     animation: none;
   }
 }
-html body .preloader {
-  position: fixed !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100vh !important;
-  min-height: 100vh !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 16px !important;
-  box-sizing: border-box !important;
-  overflow: hidden !important;
-  z-index: 999999 !important;
-}
-
-html body .preloader .loader-content {
-  position: relative !important;
-  top: auto !important;
-  left: auto !important;
-  transform: none;
-  width: 100% !important;
-  max-width: 420px !important;
-  margin: auto !important;
-  text-align: center !important;
-}
