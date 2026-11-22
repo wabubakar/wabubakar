@@ -389,16 +389,6 @@ body::before {
     transform: none !important;
   }
 }
-.preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: #080b12;
-  display: grid;
-  place-items: center;
-  transition: opacity .7s ease, visibility .7s ease;
-}
-
 .preloader.hide {
   opacity: 0;
   visibility: hidden;
